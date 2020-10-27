@@ -143,11 +143,11 @@
 }
 
 @mixin order_QRcode {
-    width: 32%;
-    height: 53%;
+    width: 35%;
+    height: 49%;
     background-color:$white;
     position: absolute;
-    right: 5%;
+    right: 6%;
     top: 0;
     display: flex;
     justify-content: center;
@@ -157,7 +157,7 @@
 @mixin QR {
     width: 90%;
     height: 90%;
-    background-image: url("../素材/QR.jpg");
+    background-image: url("./素材/QR.jpg");
     background-size: cover;
     
 }
@@ -204,9 +204,8 @@
 
 //地圖位置
 @mixin left1{
-    margin-bottom: 40%;
+    margin-bottom: 60%;
     
-
 }
 
 
