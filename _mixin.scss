@@ -71,6 +71,12 @@
     transform:rotate(-5deg);
 }
 
+@mixin ice_5 {
+    position: absolute;
+    
+    
+}
+
 @mixin wice_1{
     width: 15%;
     height: 25%;
@@ -143,11 +149,11 @@
 }
 
 @mixin order_QRcode {
-    width: 35%;
-    height: 49%;
+    width: 32%;
+    height: 53%;
     background-color:$white;
     position: absolute;
-    right: 6%;
+    right: 5%;
     top: 0;
     display: flex;
     justify-content: center;
@@ -157,7 +163,7 @@
 @mixin QR {
     width: 90%;
     height: 90%;
-    background-image: url("./素材/QR.jpg");
+    background-image: url("../素材/QR.jpg");
     background-size: cover;
     
 }
@@ -204,20 +210,20 @@
 
 //地圖位置
 @mixin left1{
-    margin-bottom: 60%;
-    
+    margin-bottom: 77%;
 }
 
 
 @mixin left2{
     margin-left: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 18%;
     letter-spacing: 11px;
 
 }
 
 @mixin left3{
     margin-left: 10%;
+    margin-bottom: 17%;
     letter-spacing: 11px;
 }
 
@@ -226,4 +232,31 @@
     letter-spacing: 11px;
 }
 
+@mixin right1 {
+    margin-bottom: 2%;
+}
+
+@mixin right2 {
+    margin-bottom: 2%;
+}
+
+@mixin right3 {
+    margin-bottom: 8%;
+    letter-spacing: 5px;
+}
+
+@mixin right4 {
+    margin-bottom: 8%;
+    letter-spacing: 6px;
+}
+
+@mixin right5 {
+    letter-spacing: 1px;
+    margin-bottom: 8%;
+}
+
+@mixin right6 {
+    letter-spacing: 1px;
+    margin-bottom: 2%;
+}
 
