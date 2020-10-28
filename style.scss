@@ -314,12 +314,14 @@ body{
                     height: 27%;
                     display: flex;
                     
+                    
 
                     .pay_title{
                         width: 24%;
                         color: $white;
                         font-size: 22px;
                         margin-left: 8%;
+                        margin-top: -1.5%;
                         z-index: 5;
 
                         }
@@ -410,6 +412,14 @@ body{
             position: absolute;
             right: 5%;
             display: flex;
+
+            .iceyellow{
+                @include iceyellow()
+            }
+
+            .icered{
+                @include icered()
+            }
 
             .address_left{
                 color: $white;

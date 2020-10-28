@@ -149,11 +149,11 @@
 }
 
 @mixin order_QRcode {
-    width: 32%;
-    height: 53%;
+    width: 35%;
+    height: 46%;
     background-color:$white;
     position: absolute;
-    right: 5%;
+    right: 6%;
     top: 0;
     display: flex;
     justify-content: center;
@@ -170,7 +170,7 @@
 
 @mixin order_bg {
     position: absolute;
-    top: 13%;
+    top: 11%;
     left: 2%;
     width: 17%;
     height: 13%;
@@ -181,7 +181,7 @@
 
 @mixin order_bg2 {
     position: absolute;
-    top: 71%;
+    top: 70%;
     left: 2%;
     width: 17%;
     height: 13%;
@@ -258,5 +258,18 @@
 @mixin right6 {
     letter-spacing: 1px;
     margin-bottom: 2%;
+}
+
+@mixin iceyellow {
+    position: absolute;
+    left:55%;
+    bottom: -5%;
+    z-index: 5;
+}
+
+@mixin icered {
+    position: absolute;
+    right:-6%;
+    bottom: -3%;
 }
 

@@ -306,7 +306,7 @@ body {
 
 .deliver .deliver_box .deliver_content .deliver_text .order_bg {
   position: absolute;
-  top: 13%;
+  top: 11%;
   left: 2%;
   width: 17%;
   height: 13%;
@@ -317,7 +317,7 @@ body {
 
 .deliver .deliver_box .deliver_content .deliver_text .order_bg2 {
   position: absolute;
-  top: 71%;
+  top: 70%;
   left: 2%;
   width: 17%;
   height: 13%;
@@ -377,11 +377,11 @@ body {
 }
 
 .deliver .deliver_box .deliver_content .deliver_text .deliver_order .order_content .order_QRcode {
-  width: 32%;
-  height: 53%;
+  width: 35%;
+  height: 46%;
   background-color: white;
   position: absolute;
-  right: 5%;
+  right: 6%;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,6 +424,7 @@ body {
   color: white;
   font-size: 22px;
   margin-left: 8%;
+  margin-top: -1.5%;
   z-index: 5;
 }
 
@@ -565,6 +566,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contact .contact_box .contact_map .address .iceyellow {
+  position: absolute;
+  left: 55%;
+  bottom: -5%;
+  z-index: 5;
+}
+
+.contact .contact_box .contact_map .address .icered {
+  position: absolute;
+  right: -6%;
+  bottom: -3%;
 }
 
 .contact .contact_box .contact_map .address .address_left {
