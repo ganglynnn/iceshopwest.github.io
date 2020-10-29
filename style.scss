@@ -23,9 +23,9 @@ body{
     margin: 0;
 }
 
-.navbaroutside{
-    display: none;
-}
+// .navbaroutside{
+//     display: none;
+// }
 
 .navbar{
     width: 100%;
@@ -117,7 +117,7 @@ body{
         height: 100%;
         
         .bosspic{
-            height: 50vh;
+            height: 45vh;
             width: 50%;
             border-radius: 60px;
             background-image: url("../素材/bosspic.png");
@@ -149,19 +149,18 @@ body{
 }
 .market{
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background-color: $gray;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .market_box{
-        background-color: darkcyan;
+        
 
         .market_title{
             width: 100%;
             text-align: center;
-            
         }
         
         .market_content{
@@ -176,6 +175,41 @@ body{
             }
 
         }
+
+        .market_swiper{
+            position: relative;
+            width: 100%;
+            height: 40vh;
+            margin-top:6%;
+            border-radius: 60px;
+            background-color: cornflowerblue;
+            
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                border-radius: 60px;
+                
+              
+          
+              .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .swiper-button-next{
+                position: absolute;
+                right: 0px;
+                color: $white;
+              }
+
+              .swiper-button-prev{
+                color: $white;
+              }
+
+            }
+        }
+        
     }
     
 }

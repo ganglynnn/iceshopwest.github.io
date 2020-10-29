@@ -42,7 +42,6 @@
             </div>
         </div>
     </div>
-
     <div class="about">
         <div class="container">
             <div class="about_box ">
@@ -57,7 +56,7 @@
                             </h2>
                         </div>
                         <div class="about_content2">
-                            
+
                             你喜歡人情味，那你會喜歡屏東。
                             <br>
                             你喜歡走巷弄，那你會喜歡西市場。
@@ -74,7 +73,6 @@
         </div>
         <div class="spoonpic"></div>
     </div>
-
     <div class="market">
         <div class="container">
             <div class="market_box">
@@ -86,7 +84,21 @@
                     <div class="market_content1-2">目前西區市場的攤商多從原成功路舊市場遷至現在的攤位，市場開幕至今已有30幾年的歷史，</div>
                     <p>曾經是人聲鼎沸的屏東市西市場，隨著人口流失、消費模式轉變，讓以往的容光煥發已不復見。</p>
                 </div>
-                <div class="market_swiper"></div>
+                <div class="market_swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img width="100%" src="./素材/market_swiper1.jpg" ></div>
+                            <div class="swiper-slide"><img width="100%" src="./素材/market_swiper2.jpg" ></div>
+                            <div class="swiper-slide"><img width="100%" src="./素材/market_swiper3.jpg" ></div>
+                            <div class="swiper-slide"><img width="100%" src="./素材/market_swiper4.jpg" ></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -106,7 +118,8 @@
         <div class="wice_3"></div>
         <div class="container">
             <div class="deliver_box">
-                <div class="deliver_title w-100 d-flex justify-content-center"><img src="../素材/1x/deliver.png" ></div>
+                <div class="deliver_title w-100 d-flex justify-content-center"><img src="../素材/1x/deliver.png">
+                </div>
                 <div class="deliver_content">
                     <div class="deliver_product"></div>
                     <div class="deliver_text">
@@ -156,17 +169,18 @@
         <div class="ice_2"></div>
         <div class="ice_3"></div>
         <div class="ice_4"></div>
-        <div class="ice_5 w-100 d-flex justify-content-center"><img src="../素材/1x/icered.png" ></div>
+        <div class="ice_5 w-100 d-flex justify-content-center"><img src="../素材/1x/icered.png"></div>
         <div class="ice_6"></div>
         <div class="container">
             <div class="contact_box">
-                <div class="contact_title w-100 d-flex justify-content-center"><img src="../素材/1x/contact.png"></div>
+                <div class="contact_title w-100 d-flex justify-content-center"><img src="../素材/1x/contact.png">
+                </div>
                 <div class="contact_map">
                     <div class="icein1"></div>
                     <div class="icein2"></div>
                     <div class="address">
                         <div class="iceyellow"><img src="./素材/1x/iceyellow.png"></div>
-                        <div class="icered"><img src="./素材/1x/icered.png" ></div>
+                        <div class="icered"><img src="./素材/1x/icered.png"></div>
                         <div class="address_left">
                             <div class="left1">營業時間：</div>
                             <div class="left2">電話：</div>
@@ -176,7 +190,7 @@
                         <div class="address_right">
                             <div class="right1">星期一　　　休息</div>
                             <div class="right2">星期二　－　星期日</div>
-                            <div class="right3">1130    － 1900</div>
+                            <div class="right3">1130 － 1900</div>
                             <div class="right4">0909789498</div>
                             <div class="right5">iceshopwest711@gmail</div>
                             <div class="right6">屏東市和平路296號西市場</div>
@@ -206,6 +220,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
+        // banner的Swiper
         var swiper = new Swiper('.swiper-container', {
             slidePerView: 4,
             freeMode: true,
@@ -216,7 +231,11 @@
                 disableOnInteraction: false,
             },
         });
+
+
     </script>
+
+
 
 </body>
 
