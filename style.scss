@@ -1,25 +1,23 @@
-@import"./default";
-@import"./mixin";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import "./default";
+@import "./mixin";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
 }
 
-p{
-    -webkit-margin-before: 0em;  
+p {
+    -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
 
-
-
-h2{
+h2 {
     margin: 0;
     font-weight: 500;
 }
 
-body{
+body {
     margin: 0;
 }
 
@@ -27,17 +25,15 @@ body{
 //     display: none;
 // }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 90px;
     background-color: $blue;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    
+    justify-content: space-between;
 
-
-    .nav_logo{
+    .nav_logo {
         width: 80px;
         height: 80px;
         border-radius: 50%;
@@ -45,27 +41,26 @@ body{
         background-image: url("../素材/LOGO.png");
         background-size: contain;
     }
-    
-    .options{
+
+    .options {
         width: 41%;
         height: 100%;
         margin-right: 7%;
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
 
-        .option{
+        .option {
             @include option();
         }
 
-        .option:hover{
+        .option:hover {
             @include option_hover();
         }
     }
-    
 }
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -73,9 +68,8 @@ body{
     .swiper-container {
         width: 100%;
         height: 100%;
-        
-        .swiper-wrapper{
-            
+
+        .swiper-wrapper {
             .swiper-slide {
                 /* Center slide text vertically */
                 display: flex;
@@ -85,9 +79,9 @@ body{
         }
     }
 
-    .banner_logo{
+    .banner_logo {
         width: 150px;
-        height:150px;
+        height: 150px;
         position: absolute;
         top: 5%;
         left: 6%;
@@ -96,10 +90,9 @@ body{
         background-size: contain;
         z-index: 5;
     }
-    
 }
 
-.about{
+.about {
     width: 100%;
     height: 75vh;
     background-color: $yellow;
@@ -107,16 +100,16 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    
-    .spoonpic{
+
+    .spoonpic {
         @include spoonpic();
     }
 
-    .about_box{
+    .about_box {
         display: flex;
         height: 100%;
-        
-        .bosspic{
+
+        .bosspic {
             height: 45vh;
             width: 50%;
             border-radius: 60px;
@@ -125,29 +118,27 @@ body{
             background-position: center;
         }
 
-        .about_content{
+        .about_content {
             margin-left: 6%;
 
-
-            .about_text{
-
-                .about_content1{
+            .about_text {
+                .about_content1 {
                     margin-top: 6%;
                     width: 100%;
                     color: $font_orange;
-                    }
-    
-                .about_content2{
+                }
+
+                .about_content2 {
                     width: 100%;
                     margin-top: 7%;
-                    font-size: 16px; 
+                    font-size: 16px;
                     line-height: 30px;
                 }
-        }
+            }
         }
     }
 }
-.market{
+.market {
     width: 100%;
     height: 85vh;
     background-color: $gray;
@@ -155,78 +146,68 @@ body{
     align-items: center;
     justify-content: center;
 
-    .market_box{
-        
+    .market_box {
+        width: 70%;
+        height: 70%;
 
-        .market_title{
+        .market_title {
             width: 100%;
             text-align: center;
         }
-        
-        .market_content{
+
+        .market_content {
             width: 100%;
-            height: 20%;
+            height: 10%;
             font-size: 13px;
             margin: 2% auto;
             text-align: center;
 
-            .market_content1-2{
+            .market_content1-2 {
                 letter-spacing: 0.2px;
             }
-
         }
 
-        .market_swiper{
-            position: relative;
+        .market_swiper {
             width: 100%;
             height: 40vh;
-            margin-top:6%;
-            border-radius: 60px;
-            background-color: cornflowerblue;
-            
+            margin-top: 4%;
+
             .swiper-container {
                 width: 100%;
                 height: 100%;
                 border-radius: 60px;
-                
-              
-          
-              .swiper-slide {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
 
-              .swiper-button-next{
-                position: absolute;
-                right: 0px;
-                color: $white;
-              }
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
 
-              .swiper-button-prev{
-                color: $white;
-              }
+                .swiper-button-next {
+                    color: $white;
+                }
 
+                .swiper-button-prev {
+                    color: $white;
+                }
             }
         }
-        
     }
-    
 }
 
-.feature{
+.feature {
     width: 100%;
     height: 120vh;
     background-color: $yellow;
 }
 
-.menu{
+.menu {
     width: 100%;
     height: 100vh;
     background-color: $gray;
 }
 
-.deliver{
+.deliver {
     width: 100%;
     height: 95vh;
     background-color: $yellow;
@@ -234,171 +215,159 @@ body{
     display: flex;
     justify-content: center;
 
-    .wice_1{
+    .wice_1 {
         @include wice_1();
     }
 
-    .wice_2{
+    .wice_2 {
         @include wice_2();
     }
 
-    .wice_3{
+    .wice_3 {
         @include wice_3();
     }
 
-    .deliver_box{
+    .deliver_box {
         width: 63%;
         height: 75vh;
         position: absolute;
         top: 10%;
 
-        .deliver_content{
+        .deliver_content {
             width: 100%;
             height: 73%;
             display: flex;
-            
 
-            .deliver_product{
+            .deliver_product {
                 width: 44%;
                 height: 100%;
                 background-color: indianred;
                 margin-left: 15px;
             }
 
-            .deliver_text{
+            .deliver_text {
                 width: 46%;
                 height: 100%;
                 margin-left: 4%;
                 position: relative;
 
-                    .order_bg{
-                    @include order_bg(); 
+                .order_bg {
+                    @include order_bg();
+                }
 
-                    }
+                .order_bg2 {
+                    @include order_bg2();
+                }
 
-                    .order_bg2{
-                        @include order_bg2(); 
-    
-                        }
-
-                    .deliver_order{
+                .deliver_order {
                     width: 100%;
                     height: 62%;
                     display: flex;
 
-
-                        .order_title{
+                    .order_title {
                         width: 24%;
                         color: $white;
                         font-size: 22px;
                         margin-top: 14%;
                         margin-left: 7%;
                         z-index: 5;
-
-                        }
-                        
-
-                        .order_content{
-                            width: 67%;
-                            margin-left: 4%;
-                            margin-top: 16%;
-                            font-size: 16px;
-                            position: relative;
-                            
-
-                            .order_1{
-                                @include order_1();
-                            }
-                            .order_2{
-                                @include order_2();
-                            }
-                            .order_3{
-                                @include order_3();
-                            }
-                            .order_4{
-                                @include order_4();
-                            }
-                            .order_5{
-                                @include order_5();
-                            }
-
-                            .order_QRcode{
-                                @include order_QRcode();
-
-                                .QR{
-                                    @include QR();
-                                }
-                            }
-
-                        }
                     }
 
-                    .deliver_wave{
+                    .order_content {
+                        width: 67%;
+                        margin-left: 4%;
+                        margin-top: 16%;
+                        font-size: 16px;
+                        position: relative;
+
+                        .order_1 {
+                            @include order_1();
+                        }
+                        .order_2 {
+                            @include order_2();
+                        }
+                        .order_3 {
+                            @include order_3();
+                        }
+                        .order_4 {
+                            @include order_4();
+                        }
+                        .order_5 {
+                            @include order_5();
+                        }
+
+                        .order_QRcode {
+                            @include order_QRcode();
+
+                            .QR {
+                                @include QR();
+                            }
+                        }
+                    }
+                }
+
+                .deliver_wave {
                     width: 100%;
                     height: 4%;
                     background-image: url("../素材/1x/wave.png");
                     background-size: contain;
                     background-repeat: no-repeat;
-                    }
+                }
 
-                    .deliver_pay{
+                .deliver_pay {
                     position: absolute;
                     bottom: 0;
                     width: 100%;
                     height: 27%;
                     display: flex;
-                    
-                    
 
-                    .pay_title{
+                    .pay_title {
                         width: 24%;
                         color: $white;
                         font-size: 22px;
                         margin-left: 8%;
                         margin-top: -1.5%;
                         z-index: 5;
-
-                        }
                     }
+                }
 
-                    .pay_content{
-                        width: 55%;
-                        height: 100%;
-                        margin-left: 3%;
-                        font-size: 16px;
-                        display: flex;
+                .pay_content {
+                    width: 55%;
+                    height: 100%;
+                    margin-left: 3%;
+                    font-size: 16px;
+                    display: flex;
 
-                        .set1{
-                            width:30% ;
-                            position: relative;
-                            font-weight: 600;
+                    .set1 {
+                        width: 30%;
+                        position: relative;
+                        font-weight: 600;
 
-                            .pay_2{
+                        .pay_2 {
                             @include pay_2();
-                            }
                         }
-
-                        .set2{
-                            width:70% ;
-                            position: relative;
-                            .pay_1-1{
-                                @include pay_1-1();
-                            }
-                            .pay_1-2{
-                                @include pay_1-2();
-                            }
-                            .pay_2-1{
-                                @include pay_2-1();
-                            }
-
-                        }   
                     }
-            } 
+
+                    .set2 {
+                        width: 70%;
+                        position: relative;
+                        .pay_1-1 {
+                            @include pay_1-1();
+                        }
+                        .pay_1-2 {
+                            @include pay_1-2();
+                        }
+                        .pay_2-1 {
+                            @include pay_2-1();
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-.contact{
+.contact {
     width: 100%;
     height: 90vh;
     background-color: $gray;
@@ -406,29 +375,28 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    .ice_1{
+
+    .ice_1 {
         @include ice_1();
     }
-    .ice_2{
+    .ice_2 {
         @include ice_2();
     }
-    .ice_3{
+    .ice_3 {
         @include ice_3();
     }
-    .ice_4{
+    .ice_4 {
         @include ice_4();
     }
-    .ice_5{
+    .ice_5 {
         @include ice_5();
     }
-    
 
-    .contact_box{
+    .contact_box {
         position: relative;
         height: 70vh;
 
-        .contact_map{
+        .contact_map {
             width: 100%;
             height: 70%;
             border-radius: 60px;
@@ -438,83 +406,80 @@ body{
             display: flex;
             align-items: center;
 
-        .address{
-            width: 30%;
-            height: 65%;
-            border-radius: 60px;
-            background-color: $blue;
-            position: absolute;
-            right: 5%;
-            display: flex;
+            .address {
+                width: 30%;
+                height: 65%;
+                border-radius: 60px;
+                background-color: $blue;
+                position: absolute;
+                right: 5%;
+                display: flex;
 
-            .iceyellow{
-                @include iceyellow()
+                .iceyellow {
+                    @include iceyellow();
+                }
+
+                .icered {
+                    @include icered();
+                }
+
+                .address_left {
+                    color: $white;
+                    width: 28%;
+                    margin-top: 15%;
+                    margin-left: 6%;
+
+                    .left1 {
+                        @include left1();
+                    }
+
+                    .left2 {
+                        @include left2();
+                    }
+
+                    .left3 {
+                        @include left3();
+                    }
+
+                    .left4 {
+                        @include left4();
+                    }
+                }
+
+                .address_right {
+                    margin-top: 15%;
+                    color: $white;
+
+                    .right1 {
+                        @include right1();
+                    }
+
+                    .right2 {
+                        @include right2();
+                    }
+
+                    .right3 {
+                        @include right3();
+                    }
+
+                    .right4 {
+                        @include right4();
+                    }
+
+                    .right5 {
+                        @include right5();
+                    }
+
+                    .right6 {
+                        @include right6();
+                    }
+                }
             }
-
-            .icered{
-                @include icered()
-            }
-
-            .address_left{
-                color: $white;
-                width: 28%;
-                margin-top: 15%;
-                margin-left: 6%;
-
-                .left1{
-                    @include left1();
-                }
-
-                .left2{
-                    @include left2();
-                }
-
-                .left3{
-                    @include left3();
-                }
-
-                .left4{
-                    @include left4();
-                }
-            }
-
-            .address_right{
-                margin-top: 15%;
-                color: $white;
-     
-
-                .right1{
-                    @include right1();
-                }
-
-                .right2{
-                    @include right2();
-                }
-
-                .right3{
-                    @include right3();
-                }
-
-                .right4{
-                    @include right4();
-                }
-
-                .right5{
-                    @include right5();
-                }
-
-                .right6{
-                    @include right6();
-
-                }
-            }
-        } 
         }
     }
-
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 40vh;
     background-color: $blue;
