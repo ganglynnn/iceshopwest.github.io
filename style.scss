@@ -158,7 +158,7 @@ body {
         .market_content {
             width: 100%;
             height: 10%;
-            font-size: 13px;
+            font-size: 16px;
             margin: 2% auto;
             text-align: center;
 
@@ -168,9 +168,38 @@ body {
         }
 
         .market_swiper {
-            width: 100%;
-            height: 40vh;
+            margin: auto;
+            width: 83%;
+            height: 43vh;
             margin-top: 4%;
+            position: relative;
+
+            .swiper-button-next {
+                width: 80px;
+                height: 70px;
+                position: absolute;
+                right: -10%;
+                background-image:url("./素材/1x/資產\ 29.png");
+                background-size:contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: $white;
+                --swiper-navigation-size:30px;
+                
+            }
+
+            .swiper-button-prev {
+                width: 80px;
+                height: 70px;
+                position: absolute;
+                left: -10%;
+                background-image:url("./素材/1x/資產\ 29.png");
+                background-size:contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: $white;
+                --swiper-navigation-size:30px;
+            }
 
             .swiper-container {
                 width: 100%;
@@ -183,13 +212,6 @@ body {
                     align-items: center;
                 }
 
-                .swiper-button-next {
-                    color: $white;
-                }
-
-                .swiper-button-prev {
-                    color: $white;
-                }
             }
         }
     }
